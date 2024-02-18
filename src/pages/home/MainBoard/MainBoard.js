@@ -23,8 +23,8 @@ function Publicity(){
             </div>
             <p>gamor now has <b>streaming party</b> platform</p>
             <div id="publicitybtns">
-                <a href="a" class='btn'>Sign in</a>
-                <a href="a">Create an account</a>
+                <a href="/login" class='btn'>Sign in</a>
+                <a href="/">Create an account</a>
             </div>
         </div>
     )
@@ -35,7 +35,7 @@ function ComingEvents(){
         <div class='newsContainer' id='nextStream'>
             <h2>Fortnite new season</h2>
             <p>Join the live stream</p>
-            <a href="a" class='btn'>Join</a>
+            <a href="/" class='btn'>Join</a>
             <div class="fill">
                 <img src={imageLight} alt="fortnite stream"></img>
             </div>

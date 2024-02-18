@@ -24,7 +24,7 @@
   --link_btn_shadow: rgb(130, 166, 179);
   --search_panel_shadow: rgba(100, 100, 100, 100);
   --hr_color1: linear-gradient(to right, transparent, rgb(101, 101, 101),transparent);
-  --hr_color2: linear-gradient(to right, rgb(230, 230, 230),transparent);
+  --hr_color2: linear-gradient(to right, rgb(69, 69, 69),transparent);
   --search_button_color: white;
 }
 * {
