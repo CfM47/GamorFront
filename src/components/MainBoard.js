@@ -17,7 +17,7 @@ function Publicity(){
         <div class='newsContainer' id='publicity'>
             <div id="publicitySign">
                 <h1>Start</h1>
-                <h1>streaming</h1>
+                <h1 id='streamingh1'>streaming</h1>
                 <h1>games</h1>
                 <h1>diferently</h1>
             </div>

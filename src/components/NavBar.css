@@ -1,13 +1,10 @@
 header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(247, 247, 247);
-    display: flex;
+    background-color: var(--page_background);
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-between;
-}
-
-html{
-    background-color: rgb(247,247,247);
 }
 
 nav{
@@ -15,7 +12,7 @@ nav{
     align-items: center;
 }
 a{
-    color: orange;
+    color: var(--link_color);
     text-decoration: solid;
     padding: 5px;
     text-decoration: none;
@@ -23,11 +20,17 @@ a{
 }
 
 a.btn {
-    background-color: white;
-    box-shadow: 0 3px 5px rgb(130, 166, 179);
+    background-color: var(--main_color);
+    box-shadow: 0 0px 5px var(--link_btn_shadow);
     text-decoration: none;
-    color: black;
+    color: var(--font_color);
     padding: 8px 15px;
     border-radius: 25px;
     margin: 5px;
+}
+
+#navbtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

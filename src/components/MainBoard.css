@@ -1,6 +1,6 @@
 #mainBoardContainer {
     height: 600px;
-    background-color: white;
+    background-color: var(--main_color);
     margin: 6%;
     align-items: center;
     justify-content: space-between;
@@ -19,10 +19,14 @@
 }
 
 #publicity {
-    background-color: white;
+    background-color: var(--main_color);
     text-align:left;
     padding: 40px 50px 40px 50px;
     font-size: larger;
+}
+
+#streamingh1{
+    color: var(--link_color);
 }
 
 #publicitybtns{
@@ -37,7 +41,7 @@
 }
 
 #selectionContainer{
-    background-color: white;
+    background-color: var(--main_color);
     text-align: left;
     align-items: center;
 }
@@ -47,7 +51,7 @@
     border-radius: 25px;
     height: max-content;
     width: fit-content;
-    background-color: whitesmoke;
+    background-color: var(--secondary_color);
     align-items: center;
 }
 .choosePlatform button{
@@ -57,9 +61,9 @@
 }
 
 button {
-    background-color: white;
+    background-color: var(--main_color);
     border: none;
-    color: black;
+    color: var(--font_color);
     padding: 10px 15px 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -83,9 +87,9 @@ button {
 }
 
 #searchButton{
-    background-color: black;
+    background-color: var(--search_button_color);
     border: none;
-    color: white;
+    color: var(--font_color_secondary);
     padding: 10px 15px 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -93,7 +97,7 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 10), 0 1px 4px 0 rgba(0, 0, 0, 10);
+    box-shadow: 0 1px 2px 0 var(--button_shadow), 0 1px 4px 0 var(--button_shadow);
 }
 
 #selectionPanel{
@@ -105,8 +109,8 @@ button {
 }
 
 #searchPanel{
-    background-color: white;
-    box-shadow: 0px 0px 50px rgba(215, 215, 215, 100);
+    background-color: var(--main_color);
+    box-shadow: 0px 0px 50px var(--search_panel_shadow);
     border-radius: 20px;
     margin: 30px 0 0 0;
     padding: 5px 15px 10px 15px;
@@ -130,9 +134,8 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 12px;
     padding: 0 4px 0 4px;
-    color: black;
     margin-right: 10px;   
-    background-color:whitesmoke;
+    background-color:var(--secondary_color);
     border-radius: 100%;
 }
 
@@ -145,7 +148,7 @@ hr{
     height: 2px;
     width: 100%;
     border: none;
-    background-image: linear-gradient(to right, transparent, rgb(101, 101, 101),transparent);
+    background-image: var(--hr_color1);
 }
 
 #streamerItem{
@@ -155,13 +158,12 @@ hr{
 
 #streamerItem hr{
     margin: 4px 0px 4px 0;
-    background-image: linear-gradient(to right, rgb(230, 230, 230),transparent);
+    background-image: var(--hr_color2);
 }
 
 #streamerItem button{
     padding: 0px 3px 2px 3px;
     box-shadow: none;
-    background-color: whitesmoke;
-    color: black;
+    background-color: var(--secondary_color);
     float: right;
 }

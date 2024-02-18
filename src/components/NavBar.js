@@ -1,5 +1,7 @@
 import React from 'react';
 import './NavBar.css';
+import './DarkModeButton/DarkMode.js'
+import DarkMode from './DarkModeButton/DarkMode.js';
 
 function NavBar(){
     return (
@@ -11,11 +13,11 @@ function NavBar(){
                 <a href='#a'>Premium</a>
             </nav>
             <h1>GAMOR</h1>
-            <div> 
+            <div id='navbtns' > 
                 <a href='a'>Log in</a>
                 <a href='a' class='btn'>Create account</a>
+                <DarkMode/>         
             </div>
-            
         </header>
     )
 }
