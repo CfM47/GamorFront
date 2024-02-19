@@ -2,17 +2,19 @@ import React from "react";
 import './MainBoard.css'
 import imageLight from './forniteLight.png'
 
-function MainBoard(){
+function MainBoard(loggedIn){
+    console.log(loggedIn)
     return (
         <div id='mainBoardContainer'>
-            <Publicity/>
+            <Publicity loggedIn={loggedIn}/>
             <ComingEvents/>
             <SelectionPanel/>
         </div>
     );
 }
 
-function Publicity(){
+function Publicity(loggedIn){
+    console.log(loggedIn)
     return (
         <div class='newsContainer' id='publicity'>
             <div id="publicitySign">

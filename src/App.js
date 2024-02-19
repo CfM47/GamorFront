@@ -3,11 +3,13 @@ import Home from './pages/home/home.js'
 import Login from './pages/login/login.js'
 import Register from './pages/register/register.js'
 import './App.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
   const [name, setName] = useState('')
+
+  console.log(loggedIn)
 
   return (
     <div className="App">

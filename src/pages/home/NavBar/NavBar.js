@@ -3,8 +3,14 @@ import './NavBar.css';
 import '../DarkModeButton/DarkMode.js'
 import DarkMode from '../DarkModeButton/DarkMode.js';
 
-function NavBar(loggedIn, setLoggedIn, name){
+function NavBar(props){
+    
+    const { name, loggedIn, setLoggedIn} = props
 
+    const logOut = ()=>{
+        localStorage.removeItem('user')
+        setLoggedIn(false)
+    }
     return (
         <header>
             <nav>
@@ -17,9 +23,7 @@ function NavBar(loggedIn, setLoggedIn, name){
             <div id='navbtns' > 
                 <div id='logInfo'>
                     {!loggedIn ? <a href='/login'>Log in</a> : <p>Welcome {name}!</p>}
-                    {
-                        <a href='/register' class='btn'>Create account</a>
-                    }
+                    {!loggedIn ? <a href='/register' class='btn'>Create account</a> : <button onClick={logOut}>Log out</button>}
                 </div>
                 <DarkMode/>         
             </div>
