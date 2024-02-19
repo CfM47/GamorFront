@@ -32,4 +32,16 @@ a.btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+}
+
+#logInfo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logInfo p{
+    margin-right: 10px;
 }

@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import './login.css'
+import './register.css'
 import NavBar from '../home/NavBar/NavBar.js'
 import { useNavigate } from 'react-router-dom'
+//import { writeFile } from 'fs'
 
-const Login = (props) => {
-    
+const Register = (props) => {
+
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     const [nameError, setNameError] = useState('')
@@ -34,16 +35,22 @@ const Login = (props) => {
         }
 
         const user = data.users.find(x => x.userName === name)
-        if (user === undefined){
-            setNameError("User not found")
+        if (user !== undefined){
+            setNameError('Invalid name')
             return;
         }
-        if(user.password !== password){
-            setPasswordError('Wrong Password')
-            return
-        }
 
-        localStorage.setItem('user', user.userName.toString())
+        data.users.push({
+            "userName" : name,
+            "password" : password,
+        })
+
+        //me falta descargar el modulo este
+
+        //var fs = require('fs')
+        //fs.writeFile('../users.json', data)
+
+        localStorage.setItem('user', name)
         props.setLoggedIn(true)
         props.setName(name)
         navigate('/')
@@ -55,7 +62,7 @@ const Login = (props) => {
             <NavBar/>
             <div className={'mainContainer'}>
                 <div className={'titleContainer'}>
-                    <div>Login</div>
+                    <div>Create Account</div>
                 </div>
                 <br/>
                     <div className={'inputContainer'}>
@@ -86,4 +93,4 @@ const Login = (props) => {
     )
 }
 
-export default Login
+export default Register

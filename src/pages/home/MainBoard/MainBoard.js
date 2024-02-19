@@ -24,7 +24,7 @@ function Publicity(){
             <p>gamor now has <b>streaming party</b> platform</p>
             <div id="publicitybtns">
                 <a href="/login" class='btn'>Sign in</a>
-                <a href="/">Create an account</a>
+                <a href="/register">Create an account</a>
             </div>
         </div>
     )

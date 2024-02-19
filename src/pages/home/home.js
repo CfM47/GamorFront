@@ -6,16 +6,10 @@ import TrendingCategories from './Categories/Categories';
 import { useNavigate } from 'react-router-dom';
 
 const Home = (props) => {
-    const { loggedIn, email } = props
-    const navigate = useNavigate()
-
-    const onButtonClick = () => {
-    // You'll update this function later
-    }
-
+    const { name, loggedIn, setLoggedIn} = props
     return (
         <>
-            <NavBar/>
+            <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} name={name}/>
             <MainBoard/>
             <TrendingCategories/>
         </>
