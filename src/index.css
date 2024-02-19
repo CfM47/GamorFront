@@ -3,9 +3,10 @@
   --main_color: white;
   --secondary_color: whitesmoke;
   --button_shadow: rgba(0, 0, 0, 10);
-  --font_color: black;
-  --font_color_secondary: white;
-  --link_color: orange;
+  --font_color1: black;
+  --font_color2: white;
+  --font_color3: orange;
+  --link_color: blueviolet;
   --link_btn_shadow: rgb(130, 166, 179);
   --search_panel_shadow: rgba(215, 215, 215, 100);
   --hr_color1: linear-gradient(to right, transparent, rgb(101, 101, 101),transparent);
@@ -18,9 +19,10 @@
   --main_color: rgb(46, 46, 46);
   --secondary_color: rgb(31, 31, 31);
   --button_shadow: rgba(255, 255, 255, 10);
-  --font_color: white;
-  --font_color_secondary: black;
-  --link_color: rgb(0, 145, 255);
+  --font_color1: white;
+  --font_color2: black;
+  --font_color3: blueviolet;
+  --link_color: orange;
   --link_btn_shadow: rgb(130, 166, 179);
   --search_panel_shadow: rgba(100, 100, 100, 100);
   --hr_color1: linear-gradient(to right, transparent, rgb(101, 101, 101),transparent);
@@ -33,7 +35,7 @@
 
 body {
   margin: 0;
-  color: var(--font_color);
+  color: var(--font_color1);
   background-color: var(--page_background);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

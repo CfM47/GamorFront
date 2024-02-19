@@ -3,7 +3,8 @@ import './NavBar.css';
 import '../DarkModeButton/DarkMode.js'
 import DarkMode from '../DarkModeButton/DarkMode.js';
 
-function NavBar(){
+function NavBar(loggedIn, setLoggedIn, email){
+
     return (
         <header>
             <nav>
@@ -14,8 +15,13 @@ function NavBar(){
             </nav>
             <h1>GAMOR</h1>
             <div id='navbtns' > 
-                <a href='/login'>Log in</a>
-                <a href='/login' class='btn'>Create account</a>
+                <div>
+                    {loggedIn ?
+                        <a href='/login'>Log in</a>
+                        :<p>Welcome, {email}!</p>
+                    }
+                    <a href='/login' class='btn'>Create account</a>
+                </div>
                 <DarkMode/>         
             </div>
         </header>

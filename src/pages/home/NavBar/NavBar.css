@@ -22,7 +22,7 @@ a.btn {
     background-color: var(--main_color);
     box-shadow: 0 0px 5px var(--link_btn_shadow);
     text-decoration: none;
-    color: var(--font_color);
+    color: var(--font_color1);
     padding: 8px 15px;
     border-radius: 25px;
     margin: 5px;

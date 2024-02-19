@@ -26,7 +26,7 @@
 }
 
 #streamingh1{
-    color: var(--link_color);
+    color: var(--font_color3);
 }
 
 #publicitybtns{
@@ -35,7 +35,7 @@
 }
 
 #nextStream{
-    background-color: blueviolet;
+    background-color: var(--link_color);
     text-align: center;
     align-items: center;
 }
@@ -63,7 +63,7 @@
 button {
     background-color: var(--main_color);
     border: none;
-    color: var(--font_color);
+    color: var(--font_color1);
     padding: 10px 15px 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -89,7 +89,7 @@ button {
 #searchButton{
     background-color: var(--search_button_color);
     border: none;
-    color: var(--font_color_secondary);
+    color: var(--font_color2);
     padding: 10px 15px 10px 15px;
     text-align: center;
     text-decoration: none;
