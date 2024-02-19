@@ -9,8 +9,6 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false)
   const [name, setName] = useState('')
 
-  console.log(loggedIn)
-
   return (
     <div className="App">
       <BrowserRouter>

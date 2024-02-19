@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './MainBoard.css'
 import imageLight from './forniteLight.png'
+import { matchRoutes } from "react-router-dom";
 
-function MainBoard(loggedIn){
-    console.log(loggedIn)
+function MainBoard(){
     return (
         <div id='mainBoardContainer'>
-            <Publicity loggedIn={loggedIn}/>
+            <Publicity/>
             <ComingEvents/>
             <SelectionPanel/>
         </div>
     );
 }
 
-function Publicity(loggedIn){
-    console.log(loggedIn)
+function Publicity(){
     return (
         <div class='newsContainer' id='publicity'>
             <div id="publicitySign">
@@ -46,14 +45,41 @@ function ComingEvents(){
 }
 
 function SelectionPanel(){
-    const streamers = ["Dr Team", "Mia Plays", "Keoexer", "NickMerc", "Mia Plays", "Keoexer", "NickMerc", "Mia Plays", "Keoexer", "NickMerc"]
-    const topStreamers = streamers.map(x =>{
+
+    const [party, setParty] = useState(false)
+    const [match, setMatchs] = useState(false)
+    const [streams, setStreams] = useState(false)
+
+    const toggleParty = () => setParty(!party);
+    const toggleMatch = () => setMatchs(!match);
+    const toggleStreams = () => setStreams(!streams);
+ 
+    var data = require("../../games.json")
+    const topStreamers = (streamers) => streamers.map(x =>{
         return (
             <li id='streamerItem'>
                 {x}
                 <button>+</button>
                 <hr/>
             </li>
+        )
+    })
+    const games = data.games.filter(x => {
+        if(party && !x.isParty)
+            return false;
+        if(match && !x.isMatch)
+            return false;
+        if(streams && !x.isStream)
+            return false;
+        return true;
+    });
+    const filteredGames = games.map((x) => {
+        return(
+            <>
+                <h3>{x.name}</h3>
+                <hr></hr>
+                <ol id='streamers'>{topStreamers(x.streamers)}</ol>
+            </>
         )
     })
 
@@ -63,17 +89,15 @@ function SelectionPanel(){
                 <li>
                     <h2>Choose platform</h2>
                     <div class="choosePlatform">
-                        <button>Party</button>
-                        <button>Matchs</button>
-                        <button>Streams</button>
+                        <button onClick={toggleParty} class={party? 'tagSelected' : 'tagNonSelected'}>Party</button>
+                        <button onClick={toggleMatch} class={match? 'tagSelected' : 'tagNonSelected'}>Matchs</button>
+                        <button onClick={toggleStreams} class={streams? 'tagSelected' : 'tagNonSelected'}>Streams</button>
                     </div>
                 </li>
                 <li>
                     <h2>Searching Game</h2>
                     <div id='searchPanel'>
-                        <h3>COD Warzone</h3>
-                        <hr></hr>
-                        <ol id='streamers'>{topStreamers}</ol>
+                        <ol id='gamesPanel'>{filteredGames}</ol>
                         <button id='searchButton'>Search Now</button>
                     </div>
                 </li>

@@ -1,0 +1,62 @@
+{
+    "games" : [
+        {
+            "name" : "COD Warzone",
+            "isParty": true,
+            "isMatch":false,
+            "isStream": true,
+            "streamers": ["Dr Team", "Mia Plays", "Keoexer", "NickMerc"]
+        },
+        {
+            "name" : "Fortnite",
+            "isParty": true,
+            "isMatch":false,
+            "isStream": false,
+            "streamers": ["Rick", "Morty", "Jimmy Neutron"]
+        },
+        {
+            "name" : "FIFA",
+            "tags" : ["Matchs","Streams"],
+            "isParty": false,
+            "isMatch": true,
+            "isStream": true,
+            "streamers": ["Rick", "Morty", "Jimmy Neutron", "unBoniato3312", "Messi10RealNoFake"]
+        },
+        {
+            "name" : "PES 2006",
+            "tags" : ["Matchs","Streams"],
+            "isParty": false,
+            "isMatch": true,
+            "isStream": true,
+            "streamers": ["PESFanNo.1", "Dracula", "otroBoniatoMas", "unBoniato3312", "CristianoRodobaldo"]
+        },
+        {
+            "name" : "Poker League",
+            "isParty": false,
+            "isMatch": true,
+            "isStream": false,
+            "streamers": ["Ibai", "AuronPLay", "Pewdipie"]
+        },
+        {
+            "name" : "WoW Legion",
+            "isParty": false,
+            "isMatch": false,
+            "isStream": true,
+            "streamers": ["Durotan", "Arthas", "LokTarOgar4124", "unBoniato3312", "otroBoniatoMas", "wabbaLabbaDubDub"]
+        },
+        {
+            "name" : "DotA2",
+            "isParty": true,
+            "isMatch": true,
+            "isStream": false,
+            "streamers": ["Rick", "Arthas", "NickMerc", "unBoniato3312", "otroBoniatoMas", "wabbaLabbaDubDub"]
+        },
+        {
+            "name" : "Buscaminas",
+            "isParty": true,
+            "isMatch": true,
+            "isStream": true,
+            "streamers": ["Rick", "Arthas", "NickMerc", "unBoniato3312", "otroBoniatoMas", "wabbaLabbaDubDub"]
+        }
+    ]
+}

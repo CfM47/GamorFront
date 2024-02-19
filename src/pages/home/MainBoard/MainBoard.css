@@ -54,7 +54,12 @@
     background-color: var(--secondary_color);
     align-items: center;
 }
-.choosePlatform button{
+.tagSelected{
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 0 0px 2px 0 var(--button_shadow), 0 0px 4px 0 var(--button_shadow);;
+}
+.tagNonSelected{
     margin: 5px;
     border-radius: 25px;
     box-shadow: none;
@@ -136,6 +141,11 @@ button {
     margin-right: 10px;   
     background-color:var(--secondary_color);
     border-radius: 100%;
+}
+
+#gamesPanel{
+    max-height: 250px;
+    overflow-y: scroll;
 }
 
 #streamers{

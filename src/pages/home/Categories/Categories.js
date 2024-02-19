@@ -7,7 +7,7 @@ function TrendingCategories(){
         return(
                 <li>
                     <p>{x}</p>
-                    <a href='a'>→</a>
+                    <a href='/'>→</a>
                 </li>
             )
     }) 
@@ -19,7 +19,7 @@ function TrendingCategories(){
                     {categories}
                     <li id='seeAll'>
                         <p>See All Categories</p>
-                        <a href='a'>→</a>
+                        <a href='/'>→</a>
                     </li>
                 </ol>
             </div>

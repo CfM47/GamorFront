@@ -6,7 +6,6 @@ import TrendingCategories from './Categories/Categories';
 
 const Home = (props) => {
     const { name, loggedIn, setLoggedIn} = props
-    console.log(loggedIn)
     return (
         <>
             <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} name={name}/>
